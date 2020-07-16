@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Original script by fornesia, rzengineer and fawzya 
-# Mod by Horasss
+# Mod by DaengHunter
 # 
 # ==================================================
 
@@ -15,10 +15,10 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.vpnstores.my.id
-organizationalunit=www.vpnstores.my.id
-commonname=www.vpnstores.my.id
-email=admin@vpnstores.my.id
+organization=DaengHunterGroups
+organizationalunit=www.daengssh.com
+commonname=Alif Putra Darmawan
+email=admin@daengssh.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/marloxxx/install/master/common-password-deb9"
@@ -103,7 +103,7 @@ apt-get -y install neofetch
 cd
 echo "clear" >> .profile
 echo "neofetch" >> .profile
-echo "echo by Horasss" >> .profile
+echo "echo © Daeng Hunter Groups" >> .profile
 
 # instal php5.6 ubuntu 16.04 64bit
 apt-get -y update
@@ -112,20 +112,20 @@ apt-get -y update
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/marloxxx/install/master/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/daenghunter/install-1/master/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Horasss</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/marloxxx/install/master/vps.conf"
+echo "<pre>Setup By Daeng Hunter Groups</pre>" > /home/vps/public_html/index.html
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/daenghunter/install-1/master/vps.conf"
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/marloxxx/install/master/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daenghunter/install-1/master/badvpn-udpgw64"
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 1000 --max-connections-for-client 10' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 1000 --max-connections-for-client 10 
 
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/marloxxx/install/master/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daenghunter/install-1/master/badvpn-udpgw64"
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10 
@@ -145,7 +145,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt-get -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/marloxxx/install/master/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/daenghunter/install-1/master/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -232,23 +232,23 @@ cd
 apt-get install -y libxml-parser-perl
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/marloxxx/install/master/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/daenghunter/install-1/master/issue.net"
 sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/marloxxx/install/master/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/marloxxx/install/master/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/marloxxx/install/master/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/marloxxx/install/master/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/marloxxx/install/master/member.sh"
-wget -O delete "https://raw.githubusercontent.com/marloxxx/install/master/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/marloxxx/install/master/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/marloxxx/install/master/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/marloxxx/install/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/marloxxx/install/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/marloxxx/install/master/about.sh"
+wget -O menu "https://raw.githubusercontent.com/daenghunter/install-1/master/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/daenghunter/install-1/master/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/daenghunter/install-1/master/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/daenghunter/install-1/master/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/daenghunter/install-1/master/member.sh"
+wget -O delete "https://raw.githubusercontent.com/daenghunter/install-1/master/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/daenghunter/install-1/master/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/daenghunter/install-1/master/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/daenghunter/install-1/master/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/daenghunter/install-1/master/info.sh"
+wget -O about "https://raw.githubusercontent.com/daenghunter/install-1/master/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
