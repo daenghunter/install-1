@@ -2,4 +2,4 @@
 
 clear
 neofetch
-echo -e "by Admin VPNSTORES"
+echo -e "© Daeng Hunter Groups"
