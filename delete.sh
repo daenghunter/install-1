@@ -10,11 +10,11 @@
             echo ""
 
                if [ ! -f /usr/local/bin/deleteduser ]; then
-               echo "echo "Autoscript by JasonTheKiller"" > /usr/local/bin/deleteduser
+               echo "echo "Delete By © Daeng Hunter"" > /usr/local/bin/deleteduser
                chmod +x /usr/local/bin/deleteduser
                fi
                hariini=`date +%d-%m-%Y`
-               echo "Autoscript by Admin VPNSTORES"
+               echo "Autoscript by Admin Daeng Hunter"
                echo "Thank you for removing the EXPIRED USERS"
                echo "--------------------------------------"
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
@@ -48,5 +48,5 @@
                fi
                done
                echo " "
-               echo "--------------------------------------"
+               echo "•••••••••••••••••••••••••••"
                echo "Script are successfully run"
