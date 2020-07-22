@@ -21,7 +21,7 @@ commonname=ALIF PUTRA DARMAWAN
 email=admin@daengssh.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/daenghunyer/install-1/master/common-password-deb9"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/daenghunter/install-1/master/common-password-deb9"
 chmod +x /etc/pam.d/common-password
 
 # go to root
