@@ -2,4 +2,6 @@
 
 clear
 neofetch
-echo -e "© Daeng Hunter Groups"
+echo -e "••••••••••••••••••••••••••••••••"
+echo -e "Copyright © Daeng Server"
+echo -e "••••••••••••••••••••••••••••••••"
