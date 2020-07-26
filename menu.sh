@@ -2,7 +2,7 @@
 #Menu
 
 echo -e "Daftar Perintah Fitur Daeng SSH Server!"
-echo -e "••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••"
+echo -e "•••••••••••••••••••••••••••••••••••••••••••••••••••••••"
 echo -e "* menu      : menampilkan daftar perintah"
 echo -e "* usernew   : membuat akun SSH & OpenVPN"
 echo -e "* trial     : membuat akun trial"
@@ -18,6 +18,6 @@ echo -e "* info      : menampilkan informasi sistem"
 echo -e "* about     : info script auto install"
 echo -e "* exit      : keluar dari Putty/Connecbot/"
 echo -e "              JuiceSSH"
-echo -e "••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••"
+echo -e "•••••••••••••••••••••••••••••••••••••••••••••••••••••••"
 echo -e "Script © Daeng Hunter Groups"
 echo -e ""
