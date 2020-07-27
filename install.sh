@@ -15,9 +15,9 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=Daeng Hunter Groups
+organization=www.daengssh.com
 organizationalunit=www.daengssh.com
-commonname=ALIF PUTRA DARMAWAN
+commonname=www.daengssh.com
 email=admin@daengssh.com
 
 # simple password minimal
@@ -331,7 +331,7 @@ echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Original Script by Horas"  | tee -a log-install.txt
+echo "Script Installer Daeng Hunter"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -342,4 +342,3 @@ rm -f /root/install.sh
 # finihsing
 clear
 neofetch
-netstat -ntlp
